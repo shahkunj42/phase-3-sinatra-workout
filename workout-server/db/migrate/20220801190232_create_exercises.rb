@@ -4,6 +4,8 @@ class CreateExercises < ActiveRecord::Migration[6.1]
       t.string :exercise
       t.integer :musclegroup_id
       t.integer :weight
+      t.string :img
+      t.string :description
       t.boolean :completed_workout
     end
   end

@@ -13,8 +13,8 @@ m2=Musclegroup.create(musclegroup: "legs",gymbro: g1)
 m3=Musclegroup.create(musclegroup: "chest",gymbro: g2)
 m4=Musclegroup.create(musclegroup: "lowerbody",gymbro: g3)
 
-e1=Exercise.create(exercise: "pushup", weight: 0, completed_workout: false, musclegroup: m1)
-e2=Exercise.create(exercise: "pullup", weight: 0, completed_workout: false, musclegroup: m1)
-e3=Exercise.create(exercise: "squat", weight: 0, completed_workout: false, musclegroup: m2)
-e4=Exercise.create(exercise: "legpress", weight: 0, completed_workout: false, musclegroup: m2)
+e1=Exercise.create(exercise: "pushup", weight: 0, completed_workout: false, musclegroup: m1,img: "https://trifocusfitnessacademy.co.za/wp-content/uploads/2020/09/DSC05541-Stephanie-Stander-Step-2.jpeg",description: "is a workout")
+e2=Exercise.create(exercise: "pullup", weight: 0, completed_workout: false, musclegroup: m1,img: "https://trifocusfitnessacademy.co.za/wp-content/uploads/2020/09/DSC05541-Stephanie-Stander-Step-2.jpeg",description: "is a workout")
+e3=Exercise.create(exercise: "squat", weight: 0, completed_workout: false, musclegroup: m2,img: "https://neckbase.com/wp-content/uploads/2017/01/workout-for-back.jpg",description: "is a workout")
+e4=Exercise.create(exercise: "legpress", weight: 0, completed_workout: false, musclegroup: m2,img: "https://neckbase.com/wp-content/uploads/2017/01/workout-for-back.jpg",description: "is a workout")
 

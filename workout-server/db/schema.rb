@@ -16,6 +16,8 @@ ActiveRecord::Schema.define(version: 2022_08_01_190232) do
     t.string "exercise"
     t.integer "musclegroup_id"
     t.integer "weight"
+    t.string "img"
+    t.string "description"
     t.boolean "completed_workout"
   end
 
