@@ -1,3 +1,3 @@
-class GymBro < ActiveRecord::Base
-
+class Gymbro < ActiveRecord::Base
+has_many :musclegroups
 end

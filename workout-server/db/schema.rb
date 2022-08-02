@@ -19,13 +19,15 @@ ActiveRecord::Schema.define(version: 2022_08_01_190232) do
     t.boolean "completed_workout"
   end
 
-  create_table "grmbros", force: :cascade do |t|
+  create_table "gymbros", force: :cascade do |t|
     t.string "name"
+    t.integer "weight"
+    t.integer "height"
   end
 
   create_table "musclegroups", force: :cascade do |t|
     t.string "musclegroup"
-    t.integer "gymbro_id"
+    t.string "gymbro_id"
   end
 
 end
