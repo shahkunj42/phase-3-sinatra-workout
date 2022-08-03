@@ -8,7 +8,7 @@ class ApplicationController < Sinatra::Base
 
     get "/GymBros" do
      gymbro=Gymbro.all
-      gymbro.to_json
+      gymbro.to_json(include: {musclegroups: {include: :exercise} }) 
     end
 
     get "/Exercise" do
