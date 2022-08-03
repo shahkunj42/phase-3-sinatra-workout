@@ -11,6 +11,11 @@ class ApplicationController < Sinatra::Base
       gymbro.to_json(include: {musclegroups: {include: :exercise} }) 
     end
 
+    get "/GymBros/:id" do
+      gymbro=Gymbro.find(params[:id])
+       gymbro.to_json(include: {musclegroups: {include: :exercise} }) 
+     end
+
     get "/Exercise" do
       exercise=Exercise.all
       exercise.to_json
