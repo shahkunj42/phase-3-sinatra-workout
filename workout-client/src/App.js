@@ -17,6 +17,7 @@ const increment = () => {
 };
 
 const renderlist = gymBros.musclegroups[0].exercise.map(name => <Exercise  name={name}/>)
+
 return (
   <div>
     <button onClick={increment}>Next Gym Rat{count}</button>
