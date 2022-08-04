@@ -7,6 +7,7 @@ function App() {
 const [count, setCount] = useState(1);
 const [gymBros, setGymBros] = useState([])
 
+
 const increment = () => {
   setCount((prevCount) => prevCount + 1);
 };
@@ -16,6 +17,15 @@ useEffect(() => {
   .then(r => r.json())
   .then(data => setGymBros(data))
 },[])
+
+// useEffect(() => {
+//   let renderMuscles = <MuscleGroups musclegroups = {gymBros.musclegroups}/>
+
+//   return renderMuscles
+// }, [gymBros])
+
+setTimeout(() => console.log(gymBros.musclegroups[0].exercise.map( things => things.exercise)
+), 0);
 
 console.log(gymBros)
 
@@ -28,7 +38,7 @@ return (
     <div>{gymBros.name}</div>
     {/* <div>{gymBros.musclegroups[0].musclegroup}</div>
     <div>{renderlist}</div> */}
-    <MuscleGroups musclegroups = {gymBros.musclegroups}/>
+    {/* {renderMuscles} */}
   </div>
   );
 }
