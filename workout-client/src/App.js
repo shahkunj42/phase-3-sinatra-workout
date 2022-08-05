@@ -54,8 +54,16 @@ const handleSubmit = (e) => {
 const putter = tester.map(things => things)
 return (
   <div>
-    <form className="form" autoComplete="off" onSubmit={handleSubmit} >
-        <h3>Add New Workout!</h3>
+    <div className='head'>
+      <div>
+        <h2 className='bro'>{gymBros.name}</h2>
+        <img src={gymBros.profile} className="profile"/>
+        <div>
+        <button onClick={increment}>Next Gym Rat {count}</button>
+        </div>
+      </div>
+      <form className="form" autoComplete="off" onSubmit={handleSubmit} >
+        <h2>Add New Workout!</h2>
         <label htmlFor="exercise">Exercise</label>
         <input
           type="text"
@@ -78,10 +86,9 @@ return (
           value={formData.img}
         />
         <button type="submit" >Add Exercise</button>
-        </form>
-    <button onClick={increment}>Next Gym Rat {count}</button>
-    <div>{gymBros.name}</div>
-    <div>{tester2}</div>
+      </form>
+    </div>
+    <h1>{tester2}</h1>
     <div>{renderlist}</div>
   </div>
   );

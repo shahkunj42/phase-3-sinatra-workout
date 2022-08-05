@@ -5,9 +5,94 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-align: center;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+div.head{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+img.profile{
+  width:  250px;
+  height: 250px;
+  background-size: cover;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: auto;
+  box-sizing: border-box;
+  grid-gap : 20px;
+}
+
+button {
+  padding      : 5px;
+  font         : bold .6em sans-serif;
+  border       : 2px solid #333;
+  border-radius: 5px;
+  background   : none;
+  cursor       : pointer;
+}
+
+.red {
+  background: #fff;
+  color: red;
+  border: 2px solid red;
+  border-radius: 3px;
+  padding: 5px 10px;
+  text-transform: uppercase;
+}
+.green {
+  background: #fff;
+  color: green;
+  border: 2px solid green;
+  border-radius: 3px;
+  padding: 5px 10px;
+  text-transform: uppercase;
+}
+
+div.card {
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+
+div.polaroid {
+  width: 25%;
+  background-color: black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img.pic {
+  width: 100%
+}
+
+div.container {
+  text-align: center;
+  padding: 10px 20px;
+}
+
+
+div.description{
+  width: 50%;
+  align-self: center;
+  
+}
+
+div.buttons p {display: inline-block;}
+div.buttons p:last-child {margin-left: 20px;}

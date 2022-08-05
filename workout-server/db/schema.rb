@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(version: 2022_08_01_190232) do
     t.string "name"
     t.integer "weight"
     t.integer "height"
+    t.string "profile"
   end
 
   create_table "musclegroups", force: :cascade do |t|

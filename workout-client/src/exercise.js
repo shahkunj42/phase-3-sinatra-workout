@@ -23,14 +23,30 @@ function Exercise({name,handleDeleteItem}){
 return(
 <div>
   {/* {exerciselist} */}
-<div>{name.exercise}</div>
-<div>{name.description}</div>
-<div>{name.weight}</div>
-<button onClick={doClick}>{checked?"Workout Completed":"Get to Work"}</button>
-<img className="pic"
-          src={name.img}
-        />
-        <button onClick={handleDeleteClick}>Delete</button>
+    <div className="card">
+      <div className="polaroid">
+        <img className="pic"src={name.img}/>
+          <div className="container">
+            <p>{name.exercise}</p>
+          </div>
+      </div>
+      <div className="description">
+        <div>{name.description}</div>
+        <div>{name.weight}</div>
+      </div>
+    </div>
+    <div className="buttons">
+      <p>
+      <span>
+        <button className={checked?"green":"red"} onClick={doClick}>{checked?"Workout Completed":"Get to Work"}</button>
+      </span>
+      </p>
+      <p>
+      <span>
+      <button onClick={handleDeleteClick}>Delete</button>
+      </span>
+      </p>
+    </div>
 </div>
 )}
 export default Exercise
